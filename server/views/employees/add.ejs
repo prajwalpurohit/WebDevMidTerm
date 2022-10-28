@@ -1,0 +1,83 @@
+<%- include ../partials/header.ejs %>
+
+<!-- Content  for the add page -->
+<div class="container">
+  <div class="row">
+    <div class="offset-md-3 col-md-6">
+      <h1><%=title %></h1>
+
+      <form class="form" method="post">
+
+        <div class="from-group">
+          <label for="authorTextField">EmployeeId</label>
+          <input
+            type="text"
+            class="form-control"
+            id="authorTextField"
+            placeholder="Enter the Employee Id:"
+            name="EmployeeId"
+            required
+          />
+        </div>
+
+        <div class="from-group">
+          <label for="nameTextField">EmployeeName</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nameTextField"
+            placeholder="Enter the Employee Name:"
+            name="EmployeeName"
+            required
+          />
+        </div>
+
+        <div class="from-group">
+          <label for="publishedTextField">Department</label>
+          <input
+            type="text"
+            class="form-control"
+            id="publishedTextField"
+            placeholder="Enter the Department:"
+            name="Department"
+            required
+          />
+        </div>
+
+        <div class="from-group">
+          <label for="descTextField">Designation</label>
+          <textarea
+            type="text"
+            class="form-control"
+            id="descTextField"
+            placeholder="Enter the Designation:"
+            name="Designation"
+            required
+          ></textarea>
+        </div>
+
+        <div class="from-group">
+          <label for="priceTextField">Salary</label>
+          <input
+            type="number"
+            class="form-control"
+            id="pricecTextField"
+            placeholder="Enter the Salary:"
+            name="Salary"
+            required
+          />
+        </div>
+
+        <button class="btn btn-primary" type="submit">
+          <i class="fas fa-edit"></i>Submit
+        </button>
+
+        <a href="/employees" class="btn btn-warning">
+          <i class="fas fa-undo"></i>Cancel
+        </a>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include ../partials/footer.ejs %>

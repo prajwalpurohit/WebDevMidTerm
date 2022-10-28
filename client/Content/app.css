@@ -1,0 +1,13 @@
+/* Custom CSS goes here */
+body {
+  padding-bottom: 70px;
+  background-color: darkgray;
+  }
+table
+{
+  background-color: dimgray;
+}
+h1{
+  size: 10px;
+}
+
